@@ -1,0 +1,115 @@
+[
+  {
+    "slug": "nuvem-hibrida-failover",
+    "title": "Estratégias de Failover e Sincronização de Dados em Ambientes de Nuvem Híbrida: Uma Revisão de Literatura",
+    "technical_focus": "Protocolos de replicação contínua e latência entre servidores on-premises e plataformas em nuvem durante failover e failback.",
+    "research_question": "Quais estratégias, protocolos e fatores de desempenho influenciam o failover, o failback e a sincronização de dados entre infraestrutura on-premises e nuvem pública em ambientes híbridos?",
+    "year_from": 2015,
+    "year_to": 2026,
+    "languages": ["en", "pt"],
+    "inclusion_criteria": [
+      {"code": "IC01", "text": "Estudo técnico ou empírico sobre nuvem híbrida."},
+      {"code": "IC02", "text": "Aborda failover, failback, replicação ou sincronização de dados."},
+      {"code": "IC03", "text": "Apresenta arquitetura, protocolo, experimento ou métrica de desempenho."}
+    ],
+    "exclusion_criteria": [
+      {"code": "EC01", "text": "Material apenas comercial, sem método ou análise técnica."},
+      {"code": "EC02", "text": "Estudo exclusivamente de nuvem pública sem componente on-premises."},
+      {"code": "EC03", "text": "Trabalho sem relação com continuidade, replicação ou recuperação."}
+    ],
+    "queries": [
+      {"code": "Q001", "language": "en", "purpose": "Busca principal", "query": "(\"hybrid cloud\" OR \"hybrid infrastructure\") AND (failover OR failback OR \"disaster recovery\") AND (\"data replication\" OR \"continuous replication\" OR synchronization)"},
+      {"code": "Q002", "language": "en", "purpose": "Latência, RTO e RPO", "query": "(\"hybrid cloud\" OR on-premises) AND (replication OR synchronization) AND (latency OR RTO OR RPO OR consistency)"},
+      {"code": "Q003", "language": "pt", "purpose": "Literatura em português", "query": "(\"nuvem híbrida\" OR \"infraestrutura híbrida\") AND (failover OR failback OR \"recuperação de desastre\") AND (replicação OR sincronização)"},
+      {"code": "Q004", "language": "en", "purpose": "Captura de mudanças e replicação contínua", "query": "(\"hybrid cloud\" OR \"on-premises to cloud\" OR \"on-prem to cloud\") AND (\"change data capture\" OR CDC OR \"continuous data replication\") AND (failover OR failback OR recovery)"},
+      {"code": "Q005", "language": "en", "purpose": "Replicação síncrona e assíncrona", "query": "(\"hybrid cloud\" OR \"hybrid IT\") AND (\"synchronous replication\" OR \"asynchronous replication\") AND (latency OR consistency OR \"replication lag\")"},
+      {"code": "Q006", "language": "en", "purpose": "Replicação de bancos de dados", "query": "(\"hybrid cloud\" OR on-premises) AND (\"database replication\" OR \"transactional replication\" OR \"log shipping\" OR \"database mirroring\") AND (failover OR failback OR \"disaster recovery\")"},
+      {"code": "Q007", "language": "en", "purpose": "Proteção contínua e replicação de armazenamento", "query": "(\"hybrid cloud\" OR on-premises) AND (\"continuous data protection\" OR \"block-level replication\" OR \"storage replication\") AND (RPO OR RTO OR failover)"},
+      {"code": "Q008", "language": "en", "purpose": "Topologias ativa e passiva", "query": "(\"hybrid cloud\" OR on-premises) AND (\"active-active\" OR \"active-passive\" OR \"active-standby\" OR \"hot standby\") AND (failover OR replication)"},
+      {"code": "Q009", "language": "en", "purpose": "Latência, WAN e largura de banda", "query": "(\"hybrid cloud\" OR \"on-premises cloud\") AND (WAN OR \"network latency\" OR bandwidth) AND (\"data synchronization\" OR replication) AND (failover OR recovery)"},
+      {"code": "Q010", "language": "en", "purpose": "Consistência de réplicas", "query": "(\"hybrid cloud\" OR \"hybrid database\") AND (\"replica consistency\" OR \"consistency window\" OR \"eventual consistency\" OR \"strong consistency\") AND (latency OR failure OR recovery)"},
+      {"code": "Q011", "language": "en", "purpose": "Migração de carga e continuidade", "query": "(\"hybrid cloud\" OR on-premises) AND (\"live migration\" OR \"workload migration\" OR \"cloud bursting\") AND (failover OR \"business continuity\")"},
+      {"code": "Q012", "language": "en", "purpose": "Clusters geograficamente distribuídos", "query": "(\"hybrid cloud\" OR on-premises) AND (\"stretched cluster\" OR \"metro cluster\" OR \"geo-cluster\") AND (failover OR failback OR replication)"},
+      {"code": "Q013", "language": "en", "purpose": "Quórum, fencing e split-brain", "query": "(\"hybrid cloud\" OR on-premises) AND (\"split brain\" OR quorum OR fencing) AND (failover OR replication)"},
+      {"code": "Q014", "language": "en", "purpose": "Failback e replicação reversa", "query": "(\"hybrid cloud\" OR on-premises) AND (failback OR \"reverse replication\" OR resynchronization OR resync) AND (data OR database OR storage)"},
+      {"code": "Q015", "language": "pt", "purpose": "Replicação, latência e objetivos de recuperação", "query": "(\"nuvem híbrida\" OR \"ambiente híbrido\" OR \"infraestrutura híbrida\") AND (\"replicação de dados\" OR \"sincronização de dados\" OR \"proteção contínua de dados\") AND (failover OR failback OR latência OR RTO OR RPO)"},
+      {"code": "Q016", "language": "es", "purpose": "Literatura ibero-americana", "query": "(\"nube híbrida\" OR \"nuvem híbrida\") AND (replicación OR replicação OR sincronización OR sincronização) AND (failover OR recuperación OR latencia)"},
+      {"code": "Q017", "language": "en", "purpose": "Protocolos e plataformas de replicação", "query": "(\"Oracle GoldenGate\" OR \"SQL Always On\" OR \"PostgreSQL streaming replication\" OR Ceph OR DRBD OR \"VMware Site Recovery\") AND (\"hybrid cloud\" OR on-premises) AND (failover OR failback OR replication)"}
+    ]
+  },
+  {
+    "slug": "multicloud-disaster-recovery",
+    "title": "Mecanismos de Redundância e Disaster Recovery em Arquiteturas Multi-Cloud: Uma Revisão Bibliográfica",
+    "technical_focus": "Interoperabilidade e distribuição geográfica de cargas de trabalho entre AWS, Azure e GCP para mitigar falhas e indisponibilidades regionais.",
+    "research_question": "Como mecanismos de redundância, portabilidade e distribuição geográfica em arquiteturas multi-cloud afetam a recuperação de desastres e a tolerância a falhas regionais?",
+    "year_from": 2015,
+    "year_to": 2026,
+    "languages": ["en", "pt"],
+    "inclusion_criteria": [
+      {"code": "IC01", "text": "Estudo envolvendo dois ou mais provedores de nuvem."},
+      {"code": "IC02", "text": "Aborda redundância, disaster recovery, continuidade ou tolerância a falhas."},
+      {"code": "IC03", "text": "Discute interoperabilidade, portabilidade, distribuição regional ou orquestração."}
+    ],
+    "exclusion_criteria": [
+      {"code": "EC01", "text": "Uso de múltiplos serviços de um único provedor sem arquitetura multi-cloud."},
+      {"code": "EC02", "text": "Comparação comercial de provedores sem análise de recuperação."},
+      {"code": "EC03", "text": "Estudo sem componente de resiliência ou disponibilidade."}
+    ],
+    "queries": [
+      {"code": "Q001", "language": "en", "purpose": "Busca principal", "query": "(multicloud OR \"multi-cloud\") AND (redundancy OR resilience OR \"disaster recovery\") AND (interoperability OR portability OR orchestration)"},
+      {"code": "Q002", "language": "en", "purpose": "Falhas regionais e distribuição", "query": "(multicloud OR \"multi-cloud\") AND (\"regional outage\" OR \"region failure\" OR geo-redundancy OR \"geographic distribution\") AND (AWS OR Azure OR GCP)"},
+      {"code": "Q003", "language": "pt", "purpose": "Literatura em português", "query": "(multicloud OR \"multi-cloud\" OR \"múltiplas nuvens\") AND (redundância OR resiliência OR \"recuperação de desastre\")"}
+    ]
+  },
+  {
+    "slug": "draas-infraestruturas-criticas",
+    "title": "Desempenho e Eficiência de Soluções DRaaS (Disaster Recovery as a Service) em Infraestruturas Críticas: Uma Análise da Literatura",
+    "technical_focus": "Consumo de largura de banda, requisitos de rede e custos de provisionamento dinâmico em planos de contingência gerenciados.",
+    "research_question": "Quais fatores de rede, desempenho, custo e provisionamento determinam a eficiência de soluções DRaaS em infraestruturas críticas?",
+    "year_from": 2015,
+    "year_to": 2026,
+    "languages": ["en", "pt"],
+    "inclusion_criteria": [
+      {"code": "IC01", "text": "Avalia DRaaS ou recuperação de desastre gerenciada em nuvem."},
+      {"code": "IC02", "text": "Apresenta métricas ou análise de RTO, RPO, rede, largura de banda, custo ou provisionamento."},
+      {"code": "IC03", "text": "Aplica-se a infraestrutura crítica, corporativa ou serviço de alta disponibilidade."}
+    ],
+    "exclusion_criteria": [
+      {"code": "EC01", "text": "Material promocional sem método ou dados comparáveis."},
+      {"code": "EC02", "text": "Backup em nuvem sem mecanismo de recuperação de desastre."},
+      {"code": "EC03", "text": "Estudo que apenas menciona DRaaS sem analisá-lo."}
+    ],
+    "queries": [
+      {"code": "Q001", "language": "en", "purpose": "Busca principal", "query": "(\"disaster recovery as a service\" OR DRaaS) AND (performance OR efficiency OR evaluation)"},
+      {"code": "Q002", "language": "en", "purpose": "Rede e objetivos de recuperação", "query": "(DRaaS OR \"cloud disaster recovery\") AND (bandwidth OR network OR latency OR RTO OR RPO)"},
+      {"code": "Q003", "language": "en", "purpose": "Custos e provisionamento", "query": "(DRaaS OR \"disaster recovery as a service\") AND (cost OR pricing OR provisioning OR scalability) AND (critical OR enterprise)"},
+      {"code": "Q004", "language": "pt", "purpose": "Literatura em português", "query": "(DRaaS OR \"recuperação de desastre como serviço\") AND (desempenho OR eficiência OR custo OR rede)"}
+    ]
+  },
+  {
+    "slug": "backup-imutavel-worm",
+    "title": "Arquiteturas de Armazenamento com Backup Imutável (WORM) para Resiliência de Dados: Uma Revisão de Literatura",
+    "technical_focus": "Políticas de retenção lógica, Object Lock e Write Once Read Many para integridade e restauração de dados após ataques cibernéticos.",
+    "research_question": "Como mecanismos WORM, Object Lock e políticas de retenção imutável contribuem para integridade, resiliência e restauração de dados após ataques cibernéticos?",
+    "year_from": 2015,
+    "year_to": 2026,
+    "languages": ["en", "pt"],
+    "inclusion_criteria": [
+      {"code": "IC01", "text": "Analisa armazenamento ou backup imutável, WORM ou Object Lock."},
+      {"code": "IC02", "text": "Relaciona o mecanismo à integridade, retenção, recuperação ou resiliência."},
+      {"code": "IC03", "text": "Apresenta arquitetura, avaliação, implementação ou análise de segurança."}
+    ],
+    "exclusion_criteria": [
+      {"code": "EC01", "text": "Uso de WORM apenas para mídia física sem relação com backup ou resiliência digital."},
+      {"code": "EC02", "text": "Material comercial sem análise técnica."},
+      {"code": "EC03", "text": "Estudo de ransomware sem mecanismo de backup ou armazenamento imutável."}
+    ],
+    "queries": [
+      {"code": "Q001", "language": "en", "purpose": "Busca principal", "query": "(\"immutable backup\" OR \"immutable storage\" OR WORM OR \"write once read many\") AND (resilience OR recovery OR integrity)"},
+      {"code": "Q002", "language": "en", "purpose": "Object Lock e ransomware", "query": "(\"object lock\" OR \"immutable backup\" OR WORM) AND (ransomware OR cyberattack OR \"cyber resilience\")"},
+      {"code": "Q003", "language": "en", "purpose": "Retenção e restauração", "query": "(\"retention lock\" OR \"immutable retention\" OR WORM) AND (backup OR restore OR recovery)"},
+      {"code": "Q004", "language": "pt", "purpose": "Literatura em português", "query": "(\"backup imutável\" OR WORM OR \"armazenamento imutável\") AND (ransomware OR resiliência OR restauração OR integridade)"}
+    ]
+  }
+]
+

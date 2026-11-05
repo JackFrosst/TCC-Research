@@ -1,0 +1,48 @@
+{
+  "slug": "observabilidade-sistemas-distribuidos",
+  "title": "Observabilidade em Sistemas Distribuídos: uma revisão de literatura",
+  "technical_focus": "Métricas, logs e rastreamento distribuído aplicados à confiabilidade de serviços críticos.",
+  "research_question": "Como técnicas de observabilidade influenciam a detecção, o diagnóstico e a recuperação de falhas em sistemas distribuídos?",
+  "year_from": 2018,
+  "year_to": 2026,
+  "languages": ["pt", "en"],
+  "inclusion_criteria": [
+    {
+      "code": "IC01",
+      "text": "Estudo técnico ou empírico sobre observabilidade em sistemas distribuídos."
+    },
+    {
+      "code": "IC02",
+      "text": "Aborda métricas, logs, tracing ou correlação de telemetria."
+    },
+    {
+      "code": "IC03",
+      "text": "Apresenta arquitetura, método, experimento ou métrica de avaliação."
+    }
+  ],
+  "exclusion_criteria": [
+    {
+      "code": "EC01",
+      "text": "Material exclusivamente comercial sem método ou análise técnica."
+    },
+    {
+      "code": "EC02",
+      "text": "Trabalho sem relação com confiabilidade, diagnóstico ou recuperação."
+    }
+  ],
+  "queries": [
+    {
+      "code": "Q001",
+      "language": "en",
+      "purpose": "Busca principal",
+      "query": "(observability OR telemetry) AND (microservices OR distributed systems) AND (reliability OR failure diagnosis)"
+    },
+    {
+      "code": "Q002",
+      "language": "pt",
+      "purpose": "Literatura em português",
+      "query": "observabilidade AND (microsserviços OR sistemas distribuídos) AND (confiabilidade OR falhas)"
+    }
+  ],
+  "created_by": "pesquisador"
+}
