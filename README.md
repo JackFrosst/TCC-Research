@@ -1,4 +1,4 @@
-# TCC Research OS
+# TCC Research
 
 Software aberto para organizar uma revisão de literatura de forma reproduzível: definição do
 protocolo, busca em fontes acadêmicas, deduplicação, obtenção legal de PDFs, priorização com
